@@ -1,0 +1,10 @@
+
+.brasas{
+    background-size: cover;
+    min-height: 100vh;
+}
+@media screen and (max-width:990px){
+    .navbar-toggler{
+        background-color: #ffc107;
+    }    
+}
