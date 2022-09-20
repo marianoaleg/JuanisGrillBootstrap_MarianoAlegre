@@ -1,7 +1,23 @@
 
+
 .brasas{
     background-size: cover;
     min-height: 100vh;
+}
+.slide{
+    margin: 10px;
+}
+.slide img{
+    height: 60vh;
+    width: 60vw;
+}
+
+@media screen and (max-width:500px) {
+    .slide img{
+        height: 40vh;
+        width: 40vw;
+    }
+    
 }
 @media screen and (max-width:990px){
     .navbar-toggler{
