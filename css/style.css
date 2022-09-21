@@ -1,9 +1,30 @@
 
-
+/* BG del BODY */
 .brasas{
     background-size: cover;
     min-height: 100vh;
 }
+/* ANIMACIONES */
+.animate__animated.animate__flipInX{
+    animation-delay: 0.5s;
+    animation-duration: 1.5s;
+}
+   @media screen and (min-width:1200px) {
+    form{
+        transition-delay: 0.5s;
+        transition: 3s;
+        }
+     form:hover{
+        /* transform: scale(1.1); */
+        width: calc(30% + 10px );
+        transition: 2s;
+     }  
+   }
+    
+
+
+    
+/* MODIFICACIÓN DEL CARRUSEL */
 .slide{
     margin: 10px;
 }
@@ -11,7 +32,7 @@
     height: 60vh;
     width: 60vw;
 }
-
+/* MEDIA QUERIES */
 @media screen and (max-width:500px) {
     .slide img{
         height: 40vh;
