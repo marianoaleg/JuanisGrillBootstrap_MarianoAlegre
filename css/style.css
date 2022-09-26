@@ -1,47 +1,78 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Caveat", cursive;
+  src: url(../media/Fonts/Caveat/Caveat-VariableFont_wght.ttf);
+}
+@media screen and (min-width: 1200px) {
+  form {
+    -webkit-transition-delay: 0.5s;
+            transition-delay: 0.5s;
+    -webkit-transition: 3s;
+    transition: 3s;
+  }
+  form:hover {
+    /* transform: scale(1.1); */
+    width: calc(30% + 10px);
+    -webkit-transition: 2s;
+    transition: 2s;
+  }
+}
+@media screen and (max-width: 500px) {
+  .slide img {
+    height: 40vh;
+    width: 40vw;
+  }
+}
+@media screen and (max-width: 990px) {
+  .navbar-toggler {
+    background-color: rgb(212, 175, 55);
+  }
+}
+.animate__animated.animate__flipInX {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+/* MODIFICACIÓN DEL CARRUSEL */
+.slide {
+  margin: 10px;
+}
+.slide img {
+  height: 60vh;
+  width: 60vw;
+}
 
 /* BG del BODY */
-.brasas{
-    background-size: cover;
-    min-height: 100vh;
+.brasas {
+  background-size: cover;
+  min-height: 100vh;
 }
+
+header div h1 a {
+  color: rgb(212, 175, 55);
+  font-family: "Caveat", cursive;
+}
+header nav div div ul li a strong {
+  color: rgb(212, 175, 55);
+  font-family: "Caveat", cursive;
+}
+
+main {
+  color: rgb(212, 175, 55);
+  font-family: "Caveat", cursive;
+}
+
+footer div p strong {
+  color: rgb(212, 175, 55);
+  font-family: "Caveat", cursive;
+}
+
+/* BG del BODY */
+.brasas {
+  background-size: cover;
+  min-height: 100vh;
+}
+
 /* ANIMACIONES */
-.animate__animated.animate__flipInX{
-    animation-delay: 0.5s;
-    animation-duration: 1.5s;
-}
-   @media screen and (min-width:1200px) {
-    form{
-        transition-delay: 0.5s;
-        transition: 3s;
-        }
-     form:hover{
-        /* transform: scale(1.1); */
-        width: calc(30% + 10px );
-        transition: 2s;
-     }  
-   }
-    
-
-
-    
-/* MODIFICACIÓN DEL CARRUSEL */
-.slide{
-    margin: 10px;
-}
-.slide img{
-    height: 60vh;
-    width: 60vw;
-}
-/* MEDIA QUERIES */
-@media screen and (max-width:500px) {
-    .slide img{
-        height: 40vh;
-        width: 40vw;
-    }
-    
-}
-@media screen and (max-width:990px){
-    .navbar-toggler{
-        background-color: #ffc107;
-    }    
-}
