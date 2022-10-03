@@ -1,18 +1,10 @@
-header{
-    div{
-        h1{
-           a{
-            color:$dorado;
-            font-family: $fuente;
-           }
-        }
-    }
-    nav{
-        div{
+header{        
+        nav{                  
             div{
                 ul{
                     li{
-                        a{
+                        a{ 
+                               
                             strong{
                                 color: $dorado;
                                 font-family: $fuente;
@@ -20,8 +12,6 @@ header{
                         }
                     }
                 }
-            }
-        }
-
+            }       
     }
 }

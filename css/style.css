@@ -28,6 +28,24 @@
     background-color: rgb(212, 175, 55);
   }
 }
+@media screen and (min-width: 991px) {
+  header div a img:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  header div nav div img:hover {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  header div nav div div ul li a:hover {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  header div nav div div ul li a strong {
+    color: rgb(212, 175, 55);
+    font-family: "Caveat", cursive;
+  }
+}
 .animate__animated.animate__flipInX {
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
@@ -50,29 +68,45 @@
   min-height: 100vh;
 }
 
-header div h1 a {
-  color: rgb(212, 175, 55);
-  font-family: "Caveat", cursive;
-}
-header nav div div ul li a strong {
+header nav div ul li a strong {
   color: rgb(212, 175, 55);
   font-family: "Caveat", cursive;
 }
 
-main {
+#mainIndex video {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+#mainIndex div {
+  text-align: center;
   color: rgb(212, 175, 55);
   font-family: "Caveat", cursive;
+  font-weight: bold;
+  font-size: 1rem;
 }
 
+footer {
+  background-image: url(../media/fondomadera.png);
+  background-size: cover;
+}
 footer div p strong {
   color: rgb(212, 175, 55);
   font-family: "Caveat", cursive;
 }
-
-/* BG del BODY */
-.brasas {
-  background-size: cover;
-  min-height: 100vh;
+footer div p {
+  color: rgb(212, 175, 55);
+  font-family: "Caveat", cursive;
 }
 
-/* ANIMACIONES */
+.btnig, .btny, .btnf {
+  background-color: magenta;
+  border-radius: 10px;
+}
+
+.btnf {
+  background-color: aqua;
+}
+
+.btny {
+  background-color: brown;
+}

@@ -1,6 +1,5 @@
 .animate__animated.animate__flipInX{
-    animation-delay: 0.5s;
-    animation-duration: 1.5s;
+    @include animacion(0.5s,1.5s)
 }
   
 /* MODIFICACIÓN DEL CARRUSEL */

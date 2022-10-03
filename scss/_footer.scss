@@ -1,4 +1,7 @@
 footer{
+    background-image: url(../media/fondomadera.png);
+    background-size: cover;
+    
     div{
         p{
             strong{
@@ -7,4 +10,22 @@ footer{
             }
         }
     }
+    div{
+        p{
+            color: $dorado;
+            font-family: $fuente; 
+        }
+    }
+}
+.btnig{
+           background-color: magenta;
+           border-radius: 10px;
+}
+.btnf{
+    @extend .btnig;
+    background-color: aqua;
+}
+.btny{
+    @extend .btnig;
+    background-color: brown;
 }

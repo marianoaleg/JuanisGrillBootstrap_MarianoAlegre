@@ -6,3 +6,16 @@
  }
  $fuente:'Caveat', cursive;
   
+$texto:(
+  color:rgb(212, 175, 55),
+  tfuente: 1rem,
+  negrita: bold,
+  centro: center,
+  fuente: $fuente,
+);
+
+@mixin animacion($delay , $duracion){
+  animation-delay: $delay;
+  animation-duration: $duracion;
+
+}
