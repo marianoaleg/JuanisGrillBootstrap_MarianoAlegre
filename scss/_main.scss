@@ -1,5 +1,7 @@
 
-
+.colorFMain{
+    color: $dorado;
+}
 #mainIndex{
     video{
         filter: grayscale(100%);
@@ -12,4 +14,10 @@ div{
     font-weight: map-get($texto , negrita );
     font-size: map-get($texto, tfuente );
 }
+}
+#mainCatering{
+    @extend .colorFMain
+};
+#mainNosotros{
+    @extend .colorFMain
 }

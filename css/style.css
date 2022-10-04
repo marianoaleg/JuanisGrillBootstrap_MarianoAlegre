@@ -73,6 +73,10 @@ header nav div ul li a strong {
   font-family: "Caveat", cursive;
 }
 
+.colorFMain, #mainNosotros, #mainCatering {
+  color: rgb(212, 175, 55);
+}
+
 #mainIndex video {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
