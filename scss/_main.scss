@@ -15,9 +15,3 @@ div{
     font-size: map-get($texto, tfuente );
 }
 }
-#mainCatering{
-    @extend .colorFMain
-};
-#mainNosotros{
-    @extend .colorFMain
-}
