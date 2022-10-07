@@ -12,6 +12,7 @@ $texto:(
   negrita: bold,
   centro: center,
   fuente: $fuente,
+  bordeFuente: 2px black,
 );
 
 @mixin animacion($delay , $duracion){

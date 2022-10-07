@@ -1,17 +1,36 @@
 
 .colorFMain{
-    color: $dorado;
+    color: map-get($texto , color );
 }
-#mainIndex{
+#mainIndex{ 
+    background-image: url(../media/videocortoFondoJuanisreverse.webm);
     video{
         filter: grayscale(100%);
+        z-index: 0;  
+        width: 100vw;
+        max-height: 100vh; 
+                
+}
         
-    }
 div{
+    z-index: 1;
     text-align: map-get($texto, centro);
     color: map-get($texto, color );
     font-family: map-get($texto, fuente );
     font-weight: map-get($texto , negrita );
     font-size: map-get($texto, tfuente );
+    -webkit-text-stroke: map-get($texto, bordeFuente )
 }
+}
+main{
+    form{
+        color: map-get($texto, color );
+    }
+}
+.card-nosotros{
+    text-align: map-get($texto, centro);
+    color: map-get($texto, color );
+    font-family: map-get($texto, fuente );
+    font-weight: map-get($texto , negrita );
+    font-size: map-get($texto, tfuente );
 }

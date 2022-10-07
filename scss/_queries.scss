@@ -1,28 +1,22 @@
-
+/*Animación para el form en la página contacto. Se aplica a partir de los 1200px para que el main 
+no quede tan vacío en pantallas grandes*/
 @media screen and (min-width:1200px) {
     form{
         transition-delay: 0.5s;
         transition: 3s;     
-            &:hover{
-            /* transform: scale(1.1); */
+            &:hover{          
             width: calc(30% + 10px );
             transition: 2s;
          }  
          }
         }  
-@media screen and (max-width:500px) {
-            .slide img{
-                height: 40vh;
-                width: 40vw;
-            }
-            
-        }
+   /*BG para que en dispositivos móviles el navbar no se confunda con el BG del body*/     
 @media screen and (max-width:990px){
             .navbar-toggler{
-                background-color: $dorado;
+                     background-color: $dorado;
     }
 }
-
+/*Animaciones del Header solo para Desktop*/
 @media screen and (min-width:991px) {
     header{
         div{
@@ -58,4 +52,23 @@
     
         }
     }}
+}
+/*Posicionar el texto del Main por sobre el video*/
+@media screen and(min-width:844px) {
+    .absolute844px{
+        position: absolute;
+    }
+}
+/*Cambio de color en la fuente del texto para que sea más legible*/
+@media screen and (max-width:500px) {
+           
+    #mainIndex{
+                div{
+                    div{
+                        h2{
+                            color:floralwhite;
+                        }
+                    }
+            }
+        }
 }
