@@ -59,16 +59,3 @@ no quede tan vacío en pantallas grandes*/
         position: absolute;
     }
 }
-/*Cambio de color en la fuente del texto para que sea más legible*/
-@media screen and (max-width:500px) {
-           
-    #mainIndex{
-                div{
-                    div{
-                        h2{
-                            color:floralwhite;
-                        }
-                    }
-            }
-        }
-}

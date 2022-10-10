@@ -4,3 +4,11 @@
     background-size: cover;
     min-height: 100vh;
 }
+
+/*Quitar margen y padding por defecto de Bootstrap 5*/
+.container-fluid{
+    padding-right: 0%;
+    padding-left: 0%;
+    margin: 0%;   
+}
+

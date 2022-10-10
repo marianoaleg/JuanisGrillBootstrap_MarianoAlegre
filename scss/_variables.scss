@@ -5,14 +5,20 @@
     src: url(../media/Fonts/Caveat/Caveat-VariableFont_wght.ttf);
  }
  $fuente:'Caveat', cursive;
-  
-$texto:(
+
+ $texto:(
   color:rgb(212, 175, 55),
   tfuente: 1rem,
   negrita: bold,
   centro: center,
   fuente: $fuente,
-  bordeFuente: 2px black,
+  bordeFuente: 1px black,
+);
+
+$bordeImagenes: ( 
+  ancho: 5px,
+  color: $dorado,
+  style: solid,
 );
 
 @mixin animacion($delay , $duracion){

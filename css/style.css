@@ -49,12 +49,6 @@ no quede tan vacío en pantallas grandes*/
     position: absolute;
   }
 }
-/*Cambio de color en la fuente del texto para que sea más legible*/
-@media screen and (max-width: 500px) {
-  #mainIndex div div h2 {
-    color: floralwhite;
-  }
-}
 .animate__animated.animate__flipInX {
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
@@ -71,12 +65,74 @@ no quede tan vacío en pantallas grandes*/
   width: 60vw;
 }
 
+/*Transform de opacidad para que de tiempo a cargar la página completa*/
+.transformOpacity, .transformMap, .transformRedes {
+  opacity: 0;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-name: opacidad;
+          animation-name: opacidad;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes opacidad {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes opacidad {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*Extend para optimizar carga de la página*/
+.transformRedes {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.transformMap {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+/*Transform Scale para los botones de redes sociales en Footer*/
+.scaleRedes {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.scaleRedes:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 /* BG del BODY */
 .brasas {
   background-size: cover;
   min-height: 100vh;
 }
 
+/*Quitar margen y padding por defecto de Bootstrap 5*/
+.container-fluid {
+  padding-right: 0%;
+  padding-left: 0%;
+  margin: 0%;
+}
+
+header nav div ul {
+  text-align: center;
+  /*alinear los items del nav al centro en toggler*/
+}
 header nav div ul li a strong {
   color: rgb(212, 175, 55);
   font-family: "Caveat", cursive;
@@ -84,8 +140,10 @@ header nav div ul li a strong {
 
 .colorFMain {
   color: rgb(212, 175, 55);
+  -webkit-text-stroke: 1px black;
 }
 
+/*Aplicado z-index para el main de la página index para que no se extienda tanto el height.*/
 #mainIndex {
   background-image: url(../media/videocortoFondoJuanisreverse.webm);
 }
@@ -103,13 +161,31 @@ header nav div ul li a strong {
   font-family: "Caveat", cursive;
   font-weight: bold;
   font-size: 1rem;
-  -webkit-text-stroke: 2px black;
+  -webkit-text-stroke: 1px black;
 }
 
+/*Color y font-family general para todos los Main*/
+main h1 {
+  font-family: "Caveat", cursive;
+  color: rgb(212, 175, 55);
+}
+main h2 {
+  font-family: "Caveat", cursive;
+  color: rgb(212, 175, 55);
+}
+main h5 {
+  font-family: "Caveat", cursive;
+  color: rgb(212, 175, 55);
+}
+main p {
+  font-family: "Caveat", cursive;
+  color: rgb(212, 175, 55);
+}
 main form {
   color: rgb(212, 175, 55);
 }
 
+/*Desde 380px hasta 990px de ancho en la página Nosotros las ímagenes son botones tipo Card */
 .card-nosotros {
   text-align: center;
   color: rgb(212, 175, 55);
@@ -118,6 +194,14 @@ main form {
   font-size: 1rem;
 }
 
+/*Función global para los bordes de las imágenes*/
+.bordeImg {
+  border-color: rgb(212, 175, 55);
+  border-style: solid;
+  border-width: 5px;
+}
+
+/*Background del Footer + style de la fuente*/
 footer {
   background-image: url(../media/fondomadera.png);
   background-size: cover;
@@ -131,6 +215,7 @@ footer div p {
   font-family: "Caveat", cursive;
 }
 
+/*Extend para la sección de redes sociales*/
 .btnig, .btny, .btnf {
   background-color: magenta;
   border-radius: 10px;

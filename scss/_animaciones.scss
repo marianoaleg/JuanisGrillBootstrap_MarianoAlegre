@@ -10,3 +10,31 @@
         width: 60vw;
         }
     }
+/*Transform de opacidad para que de tiempo a cargar la página completa*/
+.transformOpacity{
+    opacity: 0;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-name: opacidad;
+    animation-fill-mode: forwards;
+}
+@keyframes opacidad {
+    from{ opacity: 0;}
+    to{ opacity: 1;}   
+}
+/*Extend para optimizar carga de la página*/
+.transformRedes{
+  @extend .transformOpacity;
+  animation-delay: 2s;
+}
+.transformMap{
+    @extend .transformOpacity;
+    animation-delay: 2s;
+}
+/*Transform Scale para los botones de redes sociales en Footer*/
+.scaleRedes{
+    transition: 0.5s;
+    &:hover{
+        transform: scale(1.2);
+    }
+}
