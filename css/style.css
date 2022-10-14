@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "Caveat", cursive;
-  src: url(../media/Fonts/Caveat/Caveat-VariableFont_wght.ttf);
+  font-family: Montserrat;
+  src: url(../media/Fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
 }
 /*Animación para el form en la página contacto. Se aplica a partir de los 1200px para que el main 
 no quede tan vacío en pantallas grandes*/
@@ -20,6 +20,23 @@ no quede tan vacío en pantallas grandes*/
 }
 /*BG para que en dispositivos móviles el navbar no se confunda con el BG del body*/
 @media screen and (max-width: 990px) {
+  .navbar {
+    height: 66px;
+  }
+
+  header {
+    position: relative;
+    z-index: 50;
+  }
+  header div nav div div ul li a {
+    background-color: black;
+  }
+
+  main {
+    position: relative;
+    z-index: 40;
+  }
+
   .navbar-toggler {
     background-color: rgb(212, 175, 55);
   }
@@ -40,13 +57,96 @@ no quede tan vacío en pantallas grandes*/
   }
   header div nav div div ul li a strong {
     color: rgb(212, 175, 55);
-    font-family: "Caveat", cursive;
+    font-family: Montserrat;
   }
 }
 /*Posicionar el texto del Main por sobre el video*/
 @media screen and (min-width: 844px) {
   .absolute844px {
     position: absolute;
+  }
+}
+/*Ancho máximo dado al DIV para que el texto no genere un overflow*/
+@media screen and (min-width: 1780px) {
+  #parrafoIndex {
+    max-width: 1780px;
+  }
+}
+@media screen and (max-width: 574px) {
+  #mainGaleria {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #mainGaleria div {
+    max-width: 380px;
+    max-height: 380px;
+  }
+  #mainGaleria div div div img {
+    max-width: 380px;
+    max-height: 300px;
+  }
+
+  #mainCatering {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #mainCatering div {
+    max-width: 380px;
+    max-height: 380px;
+  }
+  #mainCatering div div div img {
+    max-width: 380px;
+    max-height: 300px;
+  }
+}
+@media screen and (min-width: 575px) and (max-width: 766px) {
+  #mainGaleria div {
+    max-width: 486px;
+    max-height: 400px;
+  }
+  #mainGaleria div div div img {
+    max-width: 486px;
+    max-height: 390px;
+  }
+
+  #mainCatering div {
+    max-width: 486px;
+    max-height: 400px;
+  }
+  #mainCatering div div div img {
+    max-width: 486px;
+    max-height: 390px;
+  }
+}
+@media screen and (min-width: 1168px) {
+  #mainGaleria {
+    width: 925px;
+  }
+  #mainGaleria div div img {
+    max-width: 920px;
+  }
+
+  #mainCatering {
+    width: 925px;
+  }
+  #mainCatering div div img {
+    max-width: 920px;
   }
 }
 .animate__animated.animate__flipInX {
@@ -118,6 +218,7 @@ no quede tan vacío en pantallas grandes*/
 
 /* BG del BODY */
 .brasas {
+  background-image: url(../media/bgBody.webp);
   background-size: cover;
   min-height: 100vh;
 }
@@ -129,56 +230,46 @@ no quede tan vacío en pantallas grandes*/
   margin: 0%;
 }
 
+header #divLogo {
+  height: 350px;
+  overflow: hidden;
+}
 header nav div ul {
   text-align: center;
   /*alinear los items del nav al centro en toggler*/
 }
 header nav div ul li a strong {
   color: rgb(212, 175, 55);
-  font-family: "Caveat", cursive;
-}
-
-.colorFMain {
-  color: rgb(212, 175, 55);
-  -webkit-text-stroke: 1px black;
+  font-family: Montserrat;
 }
 
 /*Aplicado z-index para el main de la página index para que no se extienda tanto el height.*/
-#mainIndex {
-  background-image: url(../media/videocortoFondoJuanisreverse.webm);
-}
 #mainIndex video {
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-  z-index: 0;
+  -webkit-filter: grayscale(100%) contrast(25%);
+          filter: grayscale(100%) contrast(25%);
   width: 100vw;
   max-height: 100vh;
-}
-#mainIndex div {
-  z-index: 1;
-  text-align: center;
-  color: rgb(212, 175, 55);
-  font-family: "Caveat", cursive;
-  font-weight: bold;
-  font-size: 1rem;
-  -webkit-text-stroke: 1px black;
 }
 
 /*Color y font-family general para todos los Main*/
 main h1 {
-  font-family: "Caveat", cursive;
+  font-family: Montserrat;
   color: rgb(212, 175, 55);
 }
 main h2 {
-  font-family: "Caveat", cursive;
+  font-family: Montserrat;
+  color: rgb(212, 175, 55);
+}
+main h4 {
+  font-family: Montserrat;
   color: rgb(212, 175, 55);
 }
 main h5 {
-  font-family: "Caveat", cursive;
+  font-family: Montserrat;
   color: rgb(212, 175, 55);
 }
 main p {
-  font-family: "Caveat", cursive;
+  font-family: Montserrat;
   color: rgb(212, 175, 55);
 }
 main form {
@@ -189,7 +280,7 @@ main form {
 .card-nosotros {
   text-align: center;
   color: rgb(212, 175, 55);
-  font-family: "Caveat", cursive;
+  font-family: Montserrat;
   font-weight: bold;
   font-size: 1rem;
 }
@@ -203,28 +294,21 @@ main form {
 
 /*Background del Footer + style de la fuente*/
 footer {
-  background-image: url(../media/fondomadera.png);
+  position: relative;
+  background-image: transparent;
   background-size: cover;
 }
 footer div p strong {
   color: rgb(212, 175, 55);
-  font-family: "Caveat", cursive;
+  font-family: Montserrat;
 }
 footer div p {
   color: rgb(212, 175, 55);
-  font-family: "Caveat", cursive;
+  font-family: Montserrat;
 }
 
 /*Extend para la sección de redes sociales*/
-.btnig, .btny, .btnf {
-  background-color: magenta;
-  border-radius: 10px;
-}
-
-.btnf {
-  background-color: aqua;
-}
-
-.btny {
-  background-color: brown;
+.btnig, .btns, .btny, .btnf {
+  width: 40px;
+  height: 40px;
 }

@@ -1,6 +1,7 @@
 /*Background del Footer + style de la fuente*/
 footer{
-    background-image: url(../media/fondomadera.png);
+    position: relative;
+    background-image:transparent;
     background-size: cover;
     
     div{
@@ -20,14 +21,18 @@ footer{
 }
 /*Extend para la sección de redes sociales*/
 .btnig{
-           background-color: magenta;
-           border-radius: 10px;
+           width: 40px;
+           height: 40px;
+           
 }
 .btnf{
     @extend .btnig;
-    background-color: aqua;
+    
 }
 .btny{
     @extend .btnig;
-    background-color: brown;
+   
+}
+.btns{
+    @extend .btnig;
 }

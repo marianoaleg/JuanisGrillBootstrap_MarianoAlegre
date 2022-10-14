@@ -1,8 +1,10 @@
 
 /* BG del BODY */
 .brasas{
+    background-image: url(../media/bgBody.webp);
     background-size: cover;
     min-height: 100vh;
+    
 }
 
 /*Quitar margen y padding por defecto de Bootstrap 5*/

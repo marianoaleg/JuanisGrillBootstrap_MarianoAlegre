@@ -1,36 +1,31 @@
 
-.colorFMain{
-    color: map-get($texto , color );
-    -webkit-text-stroke: map-get($texto, bordeFuente )
-}
+
 /*Aplicado z-index para el main de la página index para que no se extienda tanto el height.*/
 #mainIndex{ 
-    background-image: url(../media/videocortoFondoJuanisreverse.webm);
+    
     video{
-        filter: grayscale(100%);
-        z-index: 0;  
+        filter:grayscale(100%) contrast(25%);
+        
         width: 100vw;
         max-height: 100vh; 
-                
-}
+               
+}}
         
-div{
-    z-index: 1;
-    text-align: map-get($texto, centro);
-    color: map-get($texto, color );
-    font-family: map-get($texto, fuente );
-    font-weight: map-get($texto , negrita );
-    font-size: map-get($texto, tfuente );
-    -webkit-text-stroke: map-get($texto, bordeFuente )
-}
-}
+
+
 /*Color y font-family general para todos los Main*/
 main{
+   
+   
     h1{
        font-family: map-get($texto, fuente );
         color: map-get($texto, color )
     }
     h2{
+        font-family: map-get($texto, fuente );
+        color: map-get($texto, color )
+    }
+    h4{
         font-family: map-get($texto, fuente );
         color: map-get($texto, color )
     }
@@ -40,7 +35,7 @@ main{
     }
     p{
         font-family: map-get($texto, fuente );
-        color: map-get($texto, color )
+        color: map-get($texto, color );     
     }
     form{
         color: map-get($texto, color );

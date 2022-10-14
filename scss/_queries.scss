@@ -11,9 +11,43 @@ no quede tan vacío en pantallas grandes*/
          }
         }  
    /*BG para que en dispositivos móviles el navbar no se confunda con el BG del body*/     
-@media screen and (max-width:990px){
-            .navbar-toggler{
+    // Altura determinada en navbar y cambios en position e integración de Z-Index para que el navbar no empuje el Main   
+   @media screen and (max-width:990px){
+       .navbar{
+            height:66px ;
+                     
+        }   
+       header{
+        position: relative;
+        z-index: 50;
+                div{
+                    nav{
+                        div{
+                            div{
+                                
+                                ul{
+                                    
+                                        li{
+                                            a{
+                                                
+                                            background-color: black;
+                                                
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }            
+    
+       main{
+        position: relative;
+        z-index: 40;
+                }
+    .navbar-toggler{
                      background-color: $dorado;
+                     
     }
 }
 /*Animaciones del Header solo para Desktop*/
@@ -59,3 +93,113 @@ no quede tan vacío en pantallas grandes*/
         position: absolute;
     }
 }
+/*Ancho máximo dado al DIV para que el texto no genere un overflow*/
+@media screen and (min-width:1780px) {
+            #parrafoIndex{
+                max-width: 1780px;
+            }
+}
+//Ajustado el carrusel para que la imagen no quede estirada y/o comprimida
+@media screen and (max-width:574px) {
+    #mainGaleria{     
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        div{
+           
+            max-width: 380px;
+            max-height: 380px;
+            div{
+                div{
+                    img{
+                        max-width: 380px;
+                        max-height: 300px;
+                    }
+                }
+            }
+        }
+    }
+    
+    #mainCatering{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        div{
+           
+            max-width: 380px;
+            max-height: 380px;
+            div{
+                div{
+                    img{
+                        max-width: 380px;
+                        max-height: 300px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:575px ) and (max-width:766px) {
+     #mainGaleria{
+        div{
+           
+            max-width: 486px;
+            max-height: 400px;
+            div{
+                div{
+                    img{
+                        max-width: 486px;
+                        max-height: 390px;
+                    }
+                }
+            }
+        }
+     }
+     #mainCatering{
+        div{
+           
+            max-width: 486px;
+            max-height: 400px;
+            div{
+                div{
+                    img{
+                        max-width: 486px;
+                        max-height: 390px;
+                    }
+                }
+            }
+        }
+     } 
+}
+@media screen and (min-width:1168px) {
+    #mainGaleria{
+        
+           width: 925px;
+           
+           div{
+             
+            div{
+                
+                img{
+                    max-width:920px;
+                    
+                }
+            }
+           }
+        }
+        #mainCatering{
+        
+            width: 925px;
+            
+            div{
+              
+             div{
+                 
+                 img{
+                     max-width:920px;
+                     
+                 }
+             }
+            }
+         }
+    }

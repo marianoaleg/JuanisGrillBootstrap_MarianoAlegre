@@ -1,7 +1,20 @@
-header{        
-        nav{                  
+header{ 
+    
+    
+    #divLogo{
+        height: 350px;
+        overflow: hidden;
+    
+    }
+       
+        nav{ 
+             
+                
             div{
+                
                 ul{
+                
+                    
                     text-align: center; /*alinear los items del nav al centro en toggler*/
                     li{
                         a{ 
